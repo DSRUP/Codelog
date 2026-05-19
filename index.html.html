@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>codelog</title>
+<style>
+  body { font-family: 'IBM Plex Mono', monospace; background: #f5f5f0; color: #2c2c2a; max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem; }
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Fraunces:ital,wght@1,300&display=swap');
+  h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-style: italic; font-size: 2rem; margin-bottom: 2rem; }
+  h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-style: italic; font-size: 1.4rem; border-bottom: 1px solid #d3d1c7; padding-bottom: 8px; }
+  .meta { font-size: 0.75rem; color: #888; font-family: monospace; font-style: normal; margin-left: 12px; }
+  .project { margin-bottom: 3rem; }
+  .block { border-radius: 10px; margin-bottom: 14px; overflow: hidden; border: 1px solid #d3d1c7; }
+  .badge { font-size: 11px; padding: 5px 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+  .code-badge { background: #AFA9EC; color: #26215C; }
+  .desc-badge { background: #9FE1CB; color: #085041; }
+  .lesson-badge { background: #FAC775; color: #412402; }
+  .block.code pre { background: #1a1a2e; color: #e2e8f0; padding: 14px 16px; margin: 0; overflow-x: auto; font-size: 13px; line-height: 1.6; }
+  .block.desc p, .block.lesson p { padding: 12px 16px; margin: 0; font-size: 13px; line-height: 1.7; }
+  .block.lesson p { background: #FAEEDA; color: #412402; }
+  nav { margin-bottom: 2rem; }
+  nav a { margin-right: 16px; color: #533; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>codelog</h1>
+<nav><a href="#proj-1">My First HTML Page</a><a href="#proj-2">CSS Basics</a></nav>
+<section class="project" id="proj-1">
+<h2>My First HTML Page <span class="meta">May 2025</span></h2>
+<div class="block lesson"><div class="badge lesson-badge">lesson note</div><p>73</p></div>
+<div class="block code"><div class="badge code-badge">code · html</div><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;My first webpage.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+<div class="block desc"><div class="badge desc-badge">description</div><p>This is the basic skeleton of any HTML page. The &lt;head&gt; contains metadata, the &lt;body&gt; is what you see in the browser. I need to remember to always close my tags!</p></div>
+</section>
+
+<section class="project" id="proj-2">
+<h2>CSS Basics <span class="meta">May 2025</span></h2>
+<div class="block lesson"><div class="badge lesson-badge">lesson note</div><p>CSS (Cascading Style Sheets) controls how HTML looks — colours, fonts, spacing. You link a CSS file to HTML using a &lt;link&gt; tag in the head.</p></div>
+<div class="block code"><div class="badge code-badge">code · css</div><pre><code>body {
+  background: #f5f5f0;
+  font-family: Georgia, serif;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #2c2c2a;
+  font-size: 2rem;
+}</code></pre></div>
+<div class="block desc"><div class="badge desc-badge">description</div><p>The selector (e.g. h1) targets an element, then the curly braces hold the rules. margin: 0 auto is a common trick to centre a block element.</p></div>
+</section>
+</body>
+</html>
